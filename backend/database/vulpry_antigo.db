@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS aplicacoes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT NOT NULL,
+    repositorio TEXT NOT NULL,
+    usuario_id INTEGER NOT NULL,
+    data_criacao DATETIME DEFAULT CURRENT_TIMESTAMP,
+
+    FOREIGN KEY (usuario_id)
+        REFERENCES usuarios(id)
+);

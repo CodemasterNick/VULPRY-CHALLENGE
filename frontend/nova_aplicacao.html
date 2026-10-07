@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>VULPRY | Nova Aplicação</title>
+
+    <link
+        rel="stylesheet"
+        href="nova_aplicacao.css"
+    >
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            VUL<span>PRY</span>
+        </div>
+
+        <nav class="menu">
+
+            <a
+                href="dashboard.html"
+                class="menu-item"
+            >
+                <i data-lucide="layout-dashboard"></i>
+                <span>Visão Geral</span>
+            </a>
+
+            <a
+                href="#"
+                class="menu-item"
+            >
+                <i data-lucide="shield-alert"></i>
+                <span>Vulnerabilidades</span>
+            </a>
+
+            <a
+                href="aplicacoes.html"
+                class="menu-item ativo"
+            >
+                <i data-lucide="boxes"></i>
+                <span>Aplicações</span>
+            </a>
+
+            <a
+                href="#"
+                class="menu-item"
+            >
+                <i data-lucide="brain"></i>
+                <span>Análises por IA</span>
+            </a>
+
+            <a
+                href="#"
+                class="menu-item"
+            >
+                <i data-lucide="bar-chart-3"></i>
+                <span>Relatórios</span>
+            </a>
+
+        </nav>
+
+        <div class="menu-inferior">
+
+            <a
+                href="#"
+                class="menu-item"
+            >
+                <i data-lucide="settings"></i>
+                <span>Configurações</span>
+            </a>
+
+            <a
+                href="#"
+                class="menu-item sair"
+            >
+                <i data-lucide="log-out"></i>
+                <span>Sair</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- CONTEÚDO -->
+    <main class="conteudo">
+
+        <!-- TOPO -->
+        <header class="topo">
+
+            <div>
+
+                <span class="saudacao">
+                    NOVA APLICAÇÃO
+                </span>
+
+                <h1>
+                    Adicione uma nova aplicação
+                </h1>
+
+                <p>
+                    Conecte um repositório para centralizar a análise de segurança.
+                </p>
+
+            </div>
+
+
+            <div class="acoes-topo">
+
+                <button
+                    class="botao-notificacao"
+                    type="button"
+                    aria-label="Notificações"
+                >
+                    <i data-lucide="bell"></i>
+                </button>
+
+
+                <div class="perfil">
+
+                    <div
+                        class="avatar"
+                        id="avatar"
+                    >
+                        U
+                    </div>
+
+
+                    <div class="dados-perfil">
+
+                        <strong id="nomePerfil">
+                            Usuário
+                        </strong>
+
+                        <small>
+                            Administrador
+                        </small>
+
+                    </div>
+
+                    <i data-lucide="chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ÁREA DA PÁGINA -->
+        <section class="pagina-aplicacao">
+
+            <!-- CABEÇALHO -->
+            <div class="cabecalho-aplicacao">
+
+                <span class="saudacao">
+                    CONFIGURAÇÃO
+                </span>
+
+                <h2>
+                    Dados da aplicação
+                </h2>
+
+                <p>
+                    Informe os dados do projeto que deseja monitorar.
+                </p>
+
+            </div>
+
+
+            <!-- CARD -->
+            <div class="card-aplicacao">
+
+                <!-- CABEÇALHO DO CARD -->
+                <div class="card-aplicacao-header">
+
+                    <div class="icone-aplicacao">
+                        <i data-lucide="boxes"></i>
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Nova aplicação
+                        </h3>
+
+                        <p>
+                            Conecte seu projeto à plataforma VULPRY.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORMULÁRIO -->
+                <form
+                    id="formNovaAplicacao"
+                    class="formulario"
+                >
+
+                    <!-- NOME -->
+                    <div class="campo">
+
+                        <label for="nome">
+                            Nome da aplicação
+                        </label>
+
+
+                        <div class="input-container">
+
+                            <i data-lucide="panel-top"></i>
+
+                            <input
+                                type="text"
+                                id="nome"
+                                name="nome"
+                                placeholder="Ex: Sistema de pagamentos"
+                                autocomplete="off"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- REPOSITÓRIO -->
+                    <div class="campo">
+
+                        <label for="repositorio">
+                            Repositório
+                        </label>
+
+
+                        <div class="input-container">
+
+                            <i data-lucide="git-branch"></i>
+
+                            <input
+                                type="url"
+                                id="repositorio"
+                                name="repositorio"
+                                placeholder="https://github.com/usuario/projeto"
+                                required
+                            >
+
+                        </div>
+
+
+                        <small class="ajuda-campo">
+                            Informe a URL do repositório que será associado à aplicação.
+                        </small>
+
+                    </div>
+
+
+                    <!-- MENSAGEM -->
+                    <div id="mensagem"></div>
+
+
+                    <!-- AÇÕES -->
+                    <div class="acoes-formulario">
+
+                        <a
+                            href="aplicacao.html"
+                            class="botao botao-cancelar"
+                        >
+                            Cancelar
+                        </a>
+
+
+                        <button
+                            type="submit"
+                            id="botaoSalvar"
+                            class="botao botao-principal"
+                        >
+
+                            <i data-lucide="plus"></i>
+
+                            <span>
+                                Adicionar aplicação
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script src="nova_aplicacao.js"></script>
+
+</body>
+</html>

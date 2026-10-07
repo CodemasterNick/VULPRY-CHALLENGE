@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VULPRY | Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            VUL<span>PRY</span>
+        </div>
+
+
+        <nav class="menu">
+
+            <a href="#" class="menu-item ativo">
+
+                <i data-lucide="layout-dashboard"></i>
+
+                <span>Visão Geral</span>
+
+            </a>
+
+
+            <a href="#" class="menu-item">
+
+                <i data-lucide="shield-alert"></i>
+
+                <span>Vulnerabilidades</span>
+
+            </a>
+
+
+            <a href="aplicacoes.html" class="menu-item">
+
+                <i data-lucide="boxes"></i>
+
+                <span>Aplicações</span>
+
+            </a>
+
+
+            <a href="#" class="menu-item">
+
+                <i data-lucide="brain"></i>
+
+                <span>Análises por IA</span>
+
+            </a>
+
+
+            <a href="#" class="menu-item">
+
+                <i data-lucide="bar-chart-3"></i>
+
+                <span>Relatórios</span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="menu-inferior">
+
+            <a href="#" class="menu-item">
+
+                <i data-lucide="settings"></i>
+
+                <span>Configurações</span>
+
+            </a>
+
+
+            <a href="#" class="menu-item sair">
+
+                <i data-lucide="log-out"></i>
+
+                <span>Sair</span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+    <main class="conteudo">
+
+        <header class="topo">
+
+            <div>
+
+                <span class="saudacao">
+                    BEM-VINDO À VULPRY
+                </span>
+
+
+                <h1 id="tituloBoasVindas">
+                    Vamos proteger suas aplicações.
+                </h1>
+
+
+                <p>
+                    Centralize a segurança das suas aplicações em um só lugar.
+                </p>
+
+            </div>
+
+
+            <div class="acoes-topo">
+
+
+                <button class="botao-notificacao">
+
+                    <i data-lucide="bell"></i>
+
+                </button>
+
+
+                <div class="perfil">
+
+                   <div
+                    class="avatar"
+                    id="avatar"
+                    >
+                     U
+                    </div>
+
+                    <div class="dados-perfil">
+
+                    <strong id="nomePerfil">
+                     Usuário
+                    </strong>
+
+                    <small>
+                     Administrador
+                    </small>
+
+</div>
+
+                        <small>
+                            Administrador
+                        </small>
+
+                    </div>
+
+
+                    <i data-lucide="chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <section id="onboarding">
+
+            <div class="estado-vazio">
+
+                <div class="empty-container">
+
+                    <div class="empty-icon">
+
+                        <div class="empty-icon-circle">
+
+                            <i data-lucide="boxes"></i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="empty-texto">
+
+                        <span class="empty-eyebrow">
+                            PRIMEIRO PASSO
+                        </span>
+
+
+                        <h2>
+                            Você ainda não possui aplicações cadastradas
+                        </h2>
+
+
+                        <p>
+                            Para começar a análise de segurança,
+                            conecte o repositório da sua aplicação
+                            à plataforma VULPRY.
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="aplicacoes.html"
+                        class="botao-principal"
+                    >
+
+                        <i data-lucide="plus"></i>
+
+                        Cadastrar primeira aplicação
+
+                    </a>
+
+
+                    <span class="empty-ajuda">
+
+                        Você poderá adicionar mais aplicações depois.
+
+                    </span>
+
+                    <div class="passos">
+
+
+
+                        <div class="passo ativo">
+
+                            <div class="passo-numero">
+                                1
+                            </div>
+
+
+                            <div class="passo-conteudo">
+
+                                <strong>
+                                    Cadastre sua aplicação
+                                </strong>
+
+
+                                <span>
+                                    Informe os dados do projeto.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="linha-passo"></div>
+
+                        <div class="passo">
+
+                            <div class="passo-numero">
+                                2
+                            </div>
+
+
+                            <div class="passo-conteudo">
+
+                                <strong>
+                                    Conecte seu repositório
+                                </strong>
+
+
+                                <span>
+                                    Integre o projeto utilizando Git.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="linha-passo"></div>
+
+                        <div class="passo">
+
+                            <div class="passo-numero">
+                                3
+                            </div>
+
+
+                            <div class="passo-conteudo">
+
+                                <strong>
+                                    Analise os riscos
+                                </strong>
+
+
+                                <span>
+                                    Visualize vulnerabilidades e prioridades.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <section class="como-funciona">
+
+
+                <div class="secao-titulo">
+
+                    <span>
+                        COMO FUNCIONA
+                    </span>
+
+
+                    <h2>
+                        Centralize a segurança das suas aplicações
+                    </h2>
+
+                </div>
+
+
+
+                <div class="cards-recursos">
+
+                    <div class="card-recurso">
+
+                        <div class="recurso-icon azul">
+
+                            <i data-lucide="git-branch"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Conecte seus projetos
+                        </h3>
+
+
+                        <p>
+                            Cadastre suas aplicações e conecte seus
+                            repositórios Git à plataforma.
+                        </p>
+
+                    </div>
+
+                    <div class="card-recurso">
+
+                        <div class="recurso-icon roxo">
+
+                            <i data-lucide="brain"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Análise assistida por IA
+                        </h3>
+
+
+                        <p>
+                            A inteligência artificial auxilia na
+                            priorização e correlação dos alertas.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card-recurso">
+
+                        <div class="recurso-icon verde">
+
+                            <i data-lucide="shield-check"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Decisões mais rápidas
+                        </h3>
+
+
+                        <p>
+                            Tenha uma visão centralizada dos riscos
+                            para auxiliar a análise de segurança.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+        </section>
+
+        <section
+            id="dashboardReal"
+            style="display: none;"
+        >
+
+<div class="dashboard-header">
+    <div>
+        <span class="saudacao">
+            VISÃO GERAL
+        </span>
+
+        <h2>
+            Segurança das suas aplicações
+        </h2>
+
+        <p>
+            Acompanhe os principais riscos identificados nas suas aplicações.
+        </p>
+    </div>
+
+    <a href="nova_aplicacao.html" class="botao-principal">
+        <i data-lucide="plus"></i>
+        Nova aplicação
+    </a>
+</div>
+
+<div class="dashboard-resumo">
+
+    <div class="card-resumo">
+        <div class="resumo-icon">
+            <i data-lucide="boxes"></i>
+        </div>
+
+        <div>
+            <span>Aplicações</span>
+            <strong id="totalAplicacoes">0</strong>
+        </div>
+    </div>
+
+    <div class="card-resumo critical">
+        <div class="resumo-icon">
+            <i data-lucide="shield-alert"></i>
+        </div>
+
+        <div>
+            <span>Críticas</span>
+            <strong id="totalCritical">0</strong>
+        </div>
+    </div>
+
+    <div class="card-resumo high">
+        <div class="resumo-icon">
+            <i data-lucide="triangle-alert"></i>
+        </div>
+
+        <div>
+            <span>Altas</span>
+            <strong id="totalHigh">0</strong>
+        </div>
+    </div>
+
+    <div class="card-resumo medium">
+        <div class="resumo-icon">
+            <i data-lucide="circle-alert"></i>
+        </div>
+
+        <div>
+            <span>Médias</span>
+            <strong id="totalMedium">0</strong>
+        </div>
+    </div>
+
+</div>
+
+<div class="dashboard-aplicacoes">
+
+    <div class="secao-aplicacoes-header">
+
+        <div>
+            <span class="saudacao">
+                APLICAÇÕES MONITORADAS
+            </span>
+
+            <h2>
+                Suas aplicações
+            </h2>
+        </div>
+
+    </div>
+
+    <div id="listaAplicacoes"></div>
+
+</div>
+
+    </main>
+    <script src="dashboard.js"></script>
+
+
+</body>
+
+</html>

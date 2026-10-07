@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>VULPRY | Aplicação</title>
+
+    <link
+        rel="stylesheet"
+        href="aplicacao.css"
+    >
+
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            VUL<span>PRY</span>
+        </div>
+
+        <nav class="menu">
+
+            <a
+                href="dashboard.html"
+                class="menu-item"
+            >
+                <i data-lucide="layout-dashboard"></i>
+                <span>Visão Geral</span>
+            </a>
+
+            <a
+                href="#vulnerabilidades"
+                class="menu-item"
+            >
+                <i data-lucide="shield-alert"></i>
+                <span>Vulnerabilidades</span>
+            </a>
+
+            <a
+                href="dashboard.html"
+                class="menu-item ativo"
+            >
+                <i data-lucide="boxes"></i>
+                <span>Aplicações</span>
+            </a>
+
+            <a
+                href="#"
+                class="menu-item"
+            >
+                <i data-lucide="brain"></i>
+                <span>Análises por IA</span>
+            </a>
+
+            <a
+                href="#"
+                class="menu-item"
+            >
+                <i data-lucide="bar-chart-3"></i>
+                <span>Relatórios</span>
+            </a>
+
+        </nav>
+
+        <div class="menu-inferior">
+
+            <a
+                href="#"
+                class="menu-item"
+            >
+                <i data-lucide="settings"></i>
+                <span>Configurações</span>
+            </a>
+
+            <a
+                href="#"
+                class="menu-item sair"
+            >
+                <i data-lucide="log-out"></i>
+                <span>Sair</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <main class="conteudo">
+
+        <header class="topo">
+
+            <div>
+
+                <a
+                    href="dashboard.html"
+                    class="voltar"
+                >
+                    <i data-lucide="arrow-left"></i>
+                    Voltar para dashboard
+                </a>
+
+                <span class="eyebrow">
+                    DETALHES DA APLICAÇÃO
+                </span>
+
+                <h1 id="nomeAplicacao">
+                    Carregando aplicação...
+                </h1>
+
+                <p
+                    id="repositorioAplicacao"
+                    class="repositorio"
+                ></p>
+
+            </div>
+
+
+            <div class="acoes-topo">
+
+                <button
+                    type="button"
+                    class="botao-notificacao"
+                >
+                    <i data-lucide="bell"></i>
+                </button>
+
+                <div class="perfil">
+
+                    <div
+                        class="avatar"
+                        id="avatar"
+                    >
+                        U
+                    </div>
+
+                    <div class="dados-perfil">
+
+                        <strong id="nomePerfil">
+                            Usuário
+                        </strong>
+
+                        <small>
+                            Administrador
+                        </small>
+
+                    </div>
+
+                    <i data-lucide="chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =================================================
+             RESUMO
+        ================================================== -->
+
+        <section class="resumo">
+
+            <div class="card-resumo">
+
+                <div class="resumo-icon aplicacao">
+                    <i data-lucide="boxes"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        Vulnerabilidades
+                    </span>
+
+                    <strong id="totalVulnerabilidades">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="card-resumo critical">
+
+                <div class="resumo-icon">
+                    <i data-lucide="shield-alert"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        Críticas
+                    </span>
+
+                    <strong id="totalCritical">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="card-resumo high">
+
+                <div class="resumo-icon">
+                    <i data-lucide="triangle-alert"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        Altas
+                    </span>
+
+                    <strong id="totalHigh">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="card-resumo medium">
+
+                <div class="resumo-icon">
+                    <i data-lucide="circle-alert"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        Médias
+                    </span>
+
+                    <strong id="totalMedium">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             VULNERABILIDADES
+        ================================================== -->
+
+        <section
+            id="vulnerabilidades"
+            class="secao-vulnerabilidades"
+        >
+
+            <div class="secao-header">
+
+                <div>
+
+                    <span class="eyebrow">
+                        SEGURANÇA
+                    </span>
+
+                    <h2>
+                        Vulnerabilidades encontradas
+                    </h2>
+
+                    <p>
+                        Acompanhe os riscos identificados nesta aplicação.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="listaVulnerabilidades"
+                class="lista-vulnerabilidades"
+            >
+
+                <div class="carregando">
+                    Carregando vulnerabilidades...
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =================================================
+         SCRIPTS
+    ================================================== -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="aplicacao.js"></script>
+
+</body>
+
+</html>

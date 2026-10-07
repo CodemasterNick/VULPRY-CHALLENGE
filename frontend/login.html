@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | VULPRY</title>
+    <link rel="shortcut icon" href="./imgs/VULPRY.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="left">
+
+            <div class="logo">
+                <span class="white">VUL</span><span class="blue">PRY</span>
+            </div>
+
+            <h1>Bem-vindo de volta</h1>
+
+            <p>
+                Entre para acessar sua plataforma ASPM inteligente
+                e gerenciar suas aplicações com segurança.
+            </p>
+
+        </div>
+
+        <div class="right">
+            <div class="card">
+                <h2>Login</h2>
+                <form id="loginForm">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="********" required>
+                    <div class="options">
+                        <label class="remember">
+                            <input type="checkbox" id="lembrar">
+
+                            Lembrar-me
+
+                        </label>
+                    </div>
+
+                    <button type="submit" id="loginBtn">
+                        Entrar
+                    </button>
+
+                </form>
+
+                <div class="divider">
+                    <span>OU</span>
+                </div>
+
+                <p class="register">
+                    Não possui conta?
+                    <a href="./sign.html">Criar conta</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./login.js"></script>
+</body>
+</html>
