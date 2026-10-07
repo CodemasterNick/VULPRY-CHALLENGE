@@ -1,9 +1,9 @@
 # VULPRY
 INTEGRANTES DO GRUPO:
-Nicolas de Albuquerque Vieira da Silva- RM569537
-Arthur Alexandre Felisberto de Oliveira - RM568824
-Gabriel de Matos Leal dos Santos- RM565218
-Fabrizzio Abrahão Novembrini- RM570757
+Nicolas de Albuquerque Vieira da Silva- RM569537 |
+Arthur Alexandre Felisberto de Oliveira - RM568824 | 
+Gabriel de Matos Leal dos Santos- RM565218 | 
+Fabrizzio Abrahão Novembrini- RM570757 |
 Rodrigo Cruz Takagui- RM571813
 
 
